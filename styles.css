@@ -1,0 +1,73 @@
+/* Apply the background image to all pages */
+body {
+    font-family: Arial, sans-serif;
+    background: url('background.png') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Container to center content */
+.container {
+    text-align: center;
+}
+
+/* Page styling for each screen */
+.page {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+/* Show the first page by default */
+#first-page {
+    display: flex;
+}
+
+/* Styling for thumbs icons */
+.thumbs-icon {
+    font-size: 60px;
+    margin: 10px;
+    background-color: #e50914;
+    border: none;
+    color: white;
+    padding: 20px 40px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.thumbs-icon:hover {
+    background-color: #b20710;
+    transform: scale(1.1);
+}
+
+/* Feedback option buttons */
+.feedback-option {
+    background-color: #e50914;
+    border: none;
+    padding: 20px 40px;
+    font-size: 18px;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.feedback-option:hover {
+    background-color: #b20710;
+    transform: scale(1.05);
+}
+
+/* Headings */
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}

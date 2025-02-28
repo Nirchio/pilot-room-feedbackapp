@@ -1,0 +1,14 @@
+{
+  "name": "AV Pilot Feedback App",
+  "short_name": "Feedback",
+  "description": "A simple feedback app for AV Pilot",
+  "version": "1.0",
+  "manifest_version": 3,
+  "icons": {
+    "128": "icon.png"
+  },
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#141414",
+  "theme_color": "#e50914"
+}

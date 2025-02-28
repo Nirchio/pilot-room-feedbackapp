@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Feedback</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <!-- First page with Thumbs icons -->
+    <div id="first-page" class="page">
+      <h1>How was your experience using the technology in this room?</h1>
+      <div class="buttons">
+        <button id="thumbs-down" class="thumbs-icon">👎</button>
+        <button id="thumbs-up" class="thumbs-icon">👍</button>
+        <button id="double-thumbs-up" class="thumbs-icon">👍👍</button>
+      </div>
+    </div>
+
+    <!-- Second page after Thumbs Down is clicked -->
+    <div id="second-page" class="page" style="display:none;">
+      <h1>Choose an option:</h1>
+      <div class="buttons">
+        <button class="feedback-option">Audio Quality</button>
+        <button class="feedback-option">Video Quality</button>
+        <button class="feedback-option">Usability</button>
+        <button class="feedback-option">Overall Performance</button>
+      </div>
+    </div>
+
+    <!-- Third page after Thumbs Up is clicked -->
+    <div id="third-page" class="page" style="display:none;">
+      <h1>Choose an option:</h1>
+      <div class="buttons">
+        <button class="feedback-option">I like it, but I don't understand what this room is capable of</button>
+        <button class="feedback-option">I like it, but it's difficult to use</button>
+      </div>
+    </div>
+
+    <!-- Fourth page after Double Thumbs Up is clicked -->
+    <div id="fourth-page" class="page" style="display:none;">
+      <h1>What did you love the most?</h1>
+      <div class="buttons">
+        <button class="feedback-option">Amazing Video Quality</button>
+        <button class="feedback-option">Crystal Clear Audio</button>
+        <button class="feedback-option">Super Easy to Use</button>
+        <button class="feedback-option">Great Content Sharing</button>
+      </div>
+    </div>
+
+    <!-- Thank You Page -->
+    <div id="thank-you-page" class="page" style="display:none;">
+      <h1>Thank You!</h1>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
