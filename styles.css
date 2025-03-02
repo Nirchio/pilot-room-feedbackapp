@@ -31,21 +31,37 @@ body {
     display: flex;
 }
 
-/* Styling for thumbs icons */
-.thumbs-icon {
-    font-size: 60px;
-    margin: 10px;
-    background-color: #e50914;
-    border: none;
-    color: white;
-    padding: 20px 40px;
-    border-radius: 12px;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.2s ease;
+/* Center and align buttons horizontally */
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Space between buttons */
+    margin-top: 20px;
 }
 
-.thumbs-icon:hover {
-    background-color: #b20710;
+/* Feedback buttons (Red with Icons) */
+.feedback-btn {
+    background-color: #e50914; /* Netflix Red */
+    border: none;
+    padding: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;  /* Button size stays the same */
+    height: 150px;
+}
+
+.feedback-btn img {
+    width: 68px;  /* 15% smaller than original (80px → 68px) */
+    height: 68px;
+}
+
+.feedback-btn:hover {
+    background-color: #b81c1c; /* Darker red on hover */
     transform: scale(1.1);
 }
 

@@ -10,22 +10,28 @@
   <div class="container">
     <!-- First page with Thumbs icons -->
     <div id="first-page" class="page">
-      <h1>How was your experience using the technology in this room?</h1>
+      <h1>Give your feedback</h1>
       <div class="buttons">
-        <button id="thumbs-down" class="thumbs-icon">👎</button>
-        <button id="thumbs-up" class="thumbs-icon">👍</button>
-        <button id="double-thumbs-up" class="thumbs-icon">👍👍</button>
+        <button id="thumbs-down" class="feedback-btn">
+          <img src="td.png" alt="Thumbs Down">
+        </button>
+        <button id="thumbs-up" class="feedback-btn">
+          <img src="tu.png" alt="Thumbs Up">
+        </button>
+        <button id="double-thumbs-up" class="feedback-btn">
+          <img src="dtu.png" alt="Double Thumbs Up">
+        </button>
       </div>
     </div>
 
     <!-- Second page after Thumbs Down is clicked -->
     <div id="second-page" class="page" style="display:none;">
-      <h1>What went wrong?:</h1>
+      <h1>Choose an option:</h1>
       <div class="buttons">
-        <button class="feedback-option">Poor Audio Quality</button>
-        <button class="feedback-option">Poor Video Quality</button>
-        <button class="feedback-option">Poor Usability</button>
-        <button class="feedback-option">Poor Overall Performance</button>
+        <button class="feedback-option">Audio Quality</button>
+        <button class="feedback-option">Video Quality</button>
+        <button class="feedback-option">Usability</button>
+        <button class="feedback-option">Overall Performance</button>
       </div>
     </div>
 
