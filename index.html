@@ -11,15 +11,12 @@
     <!-- First page with Thumbs icons -->
     <div id="first-page" class="page">
       <h1>Give your feedback</h1>
-      <div class="buttons">
-        <button id="thumbs-down" class="feedback-btn">
+      <div class="buttons-row">  <!-- Changed to horizontal layout -->
+        <button id="thumbs-down" class="thumbs-icon">
           <img src="td.png" alt="Thumbs Down">
         </button>
-        <button id="thumbs-up" class="feedback-btn">
-          <img src="tu.png" alt="Thumbs Up">
-        </button>
-        <button id="double-thumbs-up" class="feedback-btn">
-          <img src="dtu.png" alt="Double Thumbs Up">
+        <button id="thumbs-up" class="thumbs-icon">
+          <img src="tu.png" alt="Thumbs Up">  <!-- Changed from "Double Thumbs Up" to "Thumbs Up" -->
         </button>
       </div>
     </div>
@@ -37,15 +34,6 @@
 
     <!-- Third page after Thumbs Up is clicked -->
     <div id="third-page" class="page" style="display:none;">
-      <h1>Choose an option:</h1>
-      <div class="buttons">
-        <button class="feedback-option">I like it, but I don't understand what this room is capable of</button>
-        <button class="feedback-option">I like it, but it's difficult to use</button>
-      </div>
-    </div>
-
-    <!-- Fourth page after Double Thumbs Up is clicked -->
-    <div id="fourth-page" class="page" style="display:none;">
       <h1>What did you love the most?</h1>
       <div class="buttons">
         <button class="feedback-option">Amazing Video Quality</button>

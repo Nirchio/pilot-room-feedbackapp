@@ -31,37 +31,37 @@ body {
     display: flex;
 }
 
-/* Center and align buttons horizontally */
-.buttons {
+/* Make the buttons horizontal */
+.buttons-row {
     display: flex;
     justify-content: center;
-    align-items: center;
-    gap: 20px; /* Space between buttons */
+    gap: 30px; /* Adds space between buttons */
     margin-top: 20px;
 }
 
-/* Feedback buttons (Red with Icons) */
-.feedback-btn {
+/* Styling for thumbs buttons (RED BUTTONS) */
+.thumbs-icon {
     background-color: #e50914; /* Netflix Red */
     border: none;
     padding: 20px;
-    border-radius: 10px;
     cursor: pointer;
+    border-radius: 12px;
     transition: background-color 0.3s ease, transform 0.2s ease;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 150px;  /* Button size stays the same */
-    height: 150px;
 }
 
-.feedback-btn img {
-    width: 68px;  /* 15% smaller than original (80px → 68px) */
-    height: 68px;
+/* Reduce image size inside buttons (Another 10% smaller) */
+.thumbs-icon img {
+    width: 92px; /* Previously 102px → Reduced by another 10% */
+    height: auto;
+    transition: transform 0.2s ease;
 }
 
-.feedback-btn:hover {
-    background-color: #b81c1c; /* Darker red on hover */
+/* Button hover effects */
+.thumbs-icon:hover {
+    background-color: #b20710;
     transform: scale(1.1);
 }
 
